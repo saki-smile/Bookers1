@@ -1,4 +1,4 @@
-<h1>Editing Book!</h1>
+<h1>Editing Book!!</h1>
 
 <% if @book.errors.any? %>
   <div class="alert alert-warning">
@@ -7,7 +7,7 @@
     </h2>
     <ul>
       <% @book.errors.full_messages.each do |message| %>
-        
+
         <p><li><%= message %></li></P>
       <% end %>
     </ul>
@@ -24,7 +24,7 @@
       <%= f.label :body, 'Body' %>
       <%= f.text_area :body %>
     </div>
-    <div class="btn"><%= f.submit ' Update Book ' %></div> 
+    <div class="btn"><%= f.submit ' Update Book ' %></div>
   </div>
 <% end %>
 
